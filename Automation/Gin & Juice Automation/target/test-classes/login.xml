@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="ChromeTest">
+  <parameter name="browser" value="chrome">
+  </parameter>
+    <classes>
+    
+       <class name="cart.Cart"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  
+  
+</suite> <!-- Suite -->

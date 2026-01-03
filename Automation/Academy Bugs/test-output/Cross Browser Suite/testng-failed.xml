@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Cross Browser Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name="Chrome Tests(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.ProductDetailsTest">
+        <methods>
+          <include name="verifyAllItemsLinkRedirection"/>
+          <include name="verifyDNKRedirection"/>
+          <include name="verifyProductDetailsPageRedirection"/>
+          <include name="initPage"/>
+          <include name="verifyWomensPageRedirection"/>
+          <include name="verifyInvalidCouponCode"/>
+          <include name="setup"/>
+          <include name="verifySignUpLinkRedirection"/>
+          <include name="verifyInvalidGiftCard"/>
+          <include name="verifyProductSearchRedirection"/>
+          <include name="verifySearchButtonRedirection"/>
+          <include name="verifyFashionTypeRedirection"/>
+          <include name="verifySignUpForm" invocation-numbers="0 1 2 3 4 5"/>
+          <include name="verifyCurrencyDropdownRedirection"/>
+          <include name="tearDown"/>
+          <include name="verifySignInLinkRedirection"/>
+        </methods>
+      </class> <!-- tests.ProductDetailsTest -->
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="initPage"/>
+          <include name="verifyRedirectionLink" invocation-numbers="0 1 2"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.ReportBugTest">
+        <methods>
+          <include name="verifyIssueTypeRedirection"/>
+          <include name="verifyExpectedResultRedirection"/>
+          <include name="verifyFreequencyRedirection"/>
+          <include name="verifyPriorityRedirection"/>
+          <include name="verifyErrorMessageRedirection"/>
+          <include name="initPage"/>
+          <include name="verifyDropDownRedirection"/>
+          <include name="verifyActualResultRedirection"/>
+          <include name="verifyScreenshotRedirection"/>
+          <include name="verifyScreenshotRecordRedirection"/>
+          <include name="verifyLogRecordRedirection"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.ReportBugTest -->
+      <class name="tests.SocialShareTest">
+        <methods>
+          <include name="verifyArticleListRedirection"/>
+          <include name="verifyEmailLinkRedirection"/>
+          <include name="verifySocialSharePopupIsDisplayed"/>
+          <include name="verifyCloseButtonLinkRedirection"/>
+          <include name="initPage"/>
+          <include name="verifyFacebookLinkRedirection"/>
+          <include name="verifyTwitterLinkRedirection"/>
+          <include name="verifyPinterestLinkRedirection"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.SocialShareTest -->
+      <class name="tests.FindBugsTest">
+        <methods>
+          <include name="verifyBestRatingRedirection"/>
+          <include name="verifyShoesProductRedirection"/>
+          <include name="verifyUpperLimitRedirection"/>
+          <include name="verifyMostReviewdRedirection"/>
+          <include name="verifyLowerLimitRedirection"/>
+          <include name="initPage"/>
+          <include name="verifyAddToCartRedirection"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="verifyJeansProductRedirection"/>
+        </methods>
+      </class> <!-- tests.FindBugsTest -->
+      <class name="tests.ContactUsTest">
+        <methods>
+          <include name="initPage"/>
+          <include name="verifyContactForm" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.ContactUsTest -->
+      <class name="tests.BookingTableTests">
+        <methods>
+          <include name="verifyTimeField"/>
+          <include name="initPage"/>
+          <include name="verifyBookingTableTabRedirection"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.BookingTableTests -->
+      <class name="tests.TypeOfBugsTests">
+        <methods>
+          <include name="verifyPerformanceTabRedirection"/>
+          <include name="initPage"/>
+          <include name="verifyReportQuotesRedirection"/>
+          <include name="verifyContentTabRedirection"/>
+          <include name="verifyTypeOfBugTabRedirection"/>
+          <include name="verifyCrashTabRedirection"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="verifyTypeOfBugsRedirection"/>
+          <include name="verifyApplyButtonRedirection"/>
+        </methods>
+      </class> <!-- tests.TypeOfBugsTests -->
+      <class name="tests.FooterTest">
+        <methods>
+          <include name="verifyLinkedInLinkRedirection"/>
+          <include name="initPage"/>
+          <include name="verifyRedditLinkRedirection"/>
+          <include name="verifyInstagramLinkRedirection"/>
+          <include name="tearDown"/>
+          <include name="verifyFacebookLinkRedirection"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.FooterTest -->
+    </classes>
+  </test> <!-- Chrome Tests(failed) -->
+  <test thread-count="3" parallel="tests" name="Edge Tests(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="tests.ProductDetailsTest">
+        <methods>
+          <include name="verifyAllItemsLinkRedirection"/>
+          <include name="verifyDNKRedirection"/>
+          <include name="verifyProductDetailsPageRedirection"/>
+          <include name="initPage"/>
+          <include name="verifyWomensPageRedirection"/>
+          <include name="verifyInvalidCouponCode"/>
+          <include name="verifySignUpLinkRedirection"/>
+          <include name="setup"/>
+          <include name="verifyInvalidGiftCard"/>
+          <include name="verifyProductSearchRedirection"/>
+          <include name="verifySearchButtonRedirection"/>
+          <include name="verifyFashionTypeRedirection"/>
+          <include name="verifySignUpForm" invocation-numbers="0 1 2 3 4 5"/>
+          <include name="verifyCurrencyDropdownRedirection"/>
+          <include name="tearDown"/>
+          <include name="verifySignInLinkRedirection"/>
+        </methods>
+      </class> <!-- tests.ProductDetailsTest -->
+      <class name="tests.DashboardTest">
+        <methods>
+          <include name="verifySendButtonLinkRedirection"/>
+          <include name="verifyArticlesBugLinkRedirection"/>
+          <include name="verifyVideoPlayerLinkRedirection"/>
+          <include name="verifySearchButtonLinkRedirection"/>
+          <include name="initPage"/>
+          <include name="verifybookingTableLinkRedirection"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="verifyHelpLinkRedirection"/>
+        </methods>
+      </class> <!-- tests.DashboardTest -->
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="initPage"/>
+          <include name="verifyRedirectionLink" invocation-numbers="0 1 2"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.ReportBugTest">
+        <methods>
+          <include name="verifyIssueTypeRedirection"/>
+          <include name="verifyExpectedResultRedirection"/>
+          <include name="verifyFreequencyRedirection"/>
+          <include name="verifyPriorityRedirection"/>
+          <include name="verifyErrorMessageRedirection"/>
+          <include name="initPage"/>
+          <include name="verifyActualResultRedirection"/>
+          <include name="verifyDropDownRedirection"/>
+          <include name="verifyScreenshotRedirection"/>
+          <include name="verifyScreenshotRecordRedirection"/>
+          <include name="verifyLogRecordRedirection"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.ReportBugTest -->
+      <class name="tests.SocialShareTest">
+        <methods>
+          <include name="verifyArticleListRedirection"/>
+          <include name="verifyEmailLinkRedirection"/>
+          <include name="verifySocialSharePopupIsDisplayed"/>
+          <include name="verifyCloseButtonLinkRedirection"/>
+          <include name="initPage"/>
+          <include name="verifyFacebookLinkRedirection"/>
+          <include name="verifyPinterestLinkRedirection"/>
+          <include name="verifyTwitterLinkRedirection"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.SocialShareTest -->
+      <class name="tests.FindBugsTest">
+        <methods>
+          <include name="verifyUpperLimitRedirection"/>
+          <include name="verifyLowerLimitRedirection"/>
+          <include name="initPage"/>
+          <include name="tearDown"/>
+          <include name="verifyJeansProductRedirection"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.FindBugsTest -->
+      <class name="tests.ContactUsTest">
+        <methods>
+          <include name="initPage"/>
+          <include name="verifyContactForm" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.ContactUsTest -->
+      <class name="tests.BookingTableTests">
+        <methods>
+          <include name="verifyTimeField"/>
+          <include name="initPage"/>
+          <include name="verifyBookingTableTabRedirection"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.BookingTableTests -->
+      <class name="tests.TypeOfBugsTests">
+        <methods>
+          <include name="verifyPerformanceTabRedirection"/>
+          <include name="initPage"/>
+          <include name="verifyReportQuotesRedirection"/>
+          <include name="verifyContentTabRedirection"/>
+          <include name="verifyTypeOfBugTabRedirection"/>
+          <include name="verifyCrashTabRedirection"/>
+          <include name="tearDown"/>
+          <include name="verifyApplyButtonRedirection"/>
+          <include name="verifyTypeOfBugsRedirection"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.TypeOfBugsTests -->
+      <class name="tests.FooterTest">
+        <methods>
+          <include name="verifyLinkedInLinkRedirection"/>
+          <include name="initPage"/>
+          <include name="verifyRedditLinkRedirection"/>
+          <include name="verifyInstagramLinkRedirection"/>
+          <include name="verifyFacebookLinkRedirection"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.FooterTest -->
+    </classes>
+  </test> <!-- Edge Tests(failed) -->
+  <test thread-count="3" parallel="tests" name="Firefox Tests(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.ProductDetailsTest">
+        <methods>
+          <include name="verifyAllItemsLinkRedirection"/>
+          <include name="verifyDNKRedirection"/>
+          <include name="verifyLinkedInIconRedirection"/>
+          <include name="verifyProductDetailsPageRedirection"/>
+          <include name="initPage"/>
+          <include name="verifyTwitterIconRedirection"/>
+          <include name="verifyWomensPageRedirection"/>
+          <include name="verifyInvalidCouponCode"/>
+          <include name="setup"/>
+          <include name="verifyHandBagRedirection"/>
+          <include name="verifySignUpLinkRedirection"/>
+          <include name="verifyPinterestIconRedirection"/>
+          <include name="verifyInvalidGiftCard"/>
+          <include name="verifyProductSearchRedirection"/>
+          <include name="verifySearchButtonRedirection"/>
+          <include name="verifyFashionTypeRedirection"/>
+          <include name="verifySignUpForm" invocation-numbers="0 1 2 3 4 5"/>
+          <include name="verifyCurrencyDropdownRedirection"/>
+          <include name="tearDown"/>
+          <include name="verifySignInLinkRedirection"/>
+        </methods>
+      </class> <!-- tests.ProductDetailsTest -->
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="initPage"/>
+          <include name="verifyRedirectionLink" invocation-numbers="0 1 2"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.ReportBugTest">
+        <methods>
+          <include name="verifyExpectedResultRedirection"/>
+          <include name="verifyIssueTypeRedirection"/>
+          <include name="verifyFreequencyRedirection"/>
+          <include name="verifyErrorMessageRedirection"/>
+          <include name="verifyPriorityRedirection"/>
+          <include name="initPage"/>
+          <include name="verifyDropDownRedirection"/>
+          <include name="verifyActualResultRedirection"/>
+          <include name="verifyScreenshotRecordRedirection"/>
+          <include name="verifyScreenshotRedirection"/>
+          <include name="verifyLogRecordRedirection"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.ReportBugTest -->
+      <class name="tests.SocialShareTest">
+        <methods>
+          <include name="verifyArticleListRedirection"/>
+          <include name="verifyEmailLinkRedirection"/>
+          <include name="verifySocialSharePopupIsDisplayed"/>
+          <include name="initPage"/>
+          <include name="verifyCloseButtonLinkRedirection"/>
+          <include name="verifyFacebookLinkRedirection"/>
+          <include name="verifyTwitterLinkRedirection"/>
+          <include name="verifyPinterestLinkRedirection"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.SocialShareTest -->
+      <class name="tests.FindBugsTest">
+        <methods>
+          <include name="verifyUpperLimitRedirection"/>
+          <include name="verifyLowerLimitRedirection"/>
+          <include name="initPage"/>
+          <include name="tearDown"/>
+          <include name="verifyJeansProductRedirection"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.FindBugsTest -->
+      <class name="tests.ContactUsTest">
+        <methods>
+          <include name="initPage"/>
+          <include name="verifyContactForm" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.ContactUsTest -->
+      <class name="tests.BookingTableTests">
+        <methods>
+          <include name="verifyTimeField"/>
+          <include name="initPage"/>
+          <include name="verifyBookingTableForm" invocation-numbers="0 1 2 3 4 5"/>
+          <include name="verifyBookingTableTabRedirection"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.BookingTableTests -->
+      <class name="tests.TypeOfBugsTests">
+        <methods>
+          <include name="verifyPerformanceTabRedirection"/>
+          <include name="initPage"/>
+          <include name="verifyReportQuotesRedirection"/>
+          <include name="verifyContentTabRedirection"/>
+          <include name="verifyTypeOfBugTabRedirection"/>
+          <include name="verifyCrashTabRedirection"/>
+          <include name="tearDown"/>
+          <include name="verifyApplyButtonRedirection"/>
+          <include name="verifyTypeOfBugsRedirection"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.TypeOfBugsTests -->
+      <class name="tests.FooterTest">
+        <methods>
+          <include name="verifyPrivacyPolicyRedirection"/>
+          <include name="verifyLinkedInLinkRedirection"/>
+          <include name="verifyIconRedirection"/>
+          <include name="verifyXcomLinkRedirection"/>
+          <include name="initPage"/>
+          <include name="verifyRedditLinkRedirection"/>
+          <include name="verifyInstagramLinkRedirection"/>
+          <include name="verifyTermsAndConditionRedirection"/>
+          <include name="verifyFacebookLinkRedirection"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.FooterTest -->
+    </classes>
+  </test> <!-- Firefox Tests(failed) -->
+</suite> <!-- Failed suite [Cross Browser Suite] -->
